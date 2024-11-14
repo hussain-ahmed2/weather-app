@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Weather Forecast</h1>
+    <div class="weather-container">
+      <!-- Input for location -->
+      <input type="text" id="location" placeholder="Enter city" onkeypress="enterKey(event)">
+      <!-- Button to fetch weather -->
+      <button id="fetchButton" onclick="fetchWeather(document.getElementById('location').value)">Get Weather</button>
+
+      <div class="weather-info" id="weatherInfo" style="display:none;">
+        <h2 id="city"></h2>
+        <div class="weather-main">
+          <img id="weatherIcon" src="" alt="Weather Icon" />
+          <p id="temperature"></p>
+          <p id="description"></p>
+        </div>
+        <div class="weather-details">
+          <div class="detail">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/wind.png" alt="Wind Icon">
+            <span id="wind">Wind: </span>
+          </div>
+          <div class="detail">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/humidity.png" alt="Humidity Icon">
+            <span id="humidity">Humidity: </span>
+          </div>
+          <div class="detail">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/visible.png" alt="Visibility Icon">
+            <span id="visibility">Visibility: </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
