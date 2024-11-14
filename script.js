@@ -1,6 +1,6 @@
 function fetchWeather(location = "Dhaka") {
     const apiKey = '9b66cc778523418802b6db7885a89cda';
-    const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${location}`;
+    const url = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${location}`;
 
     fetch(url)
         .then(response => response.json())
