@@ -1,6 +1,6 @@
 # Weather App
 
-A simple, mobile-responsive weather app that provides current weather information for a specified location. The app uses the Weatherstack API to fetch real-time weather data and displays it with relevant icons and a background that matches the weather condition (e.g., sunny, cloudy, rainy, snowy). 
+A simple, mobile-responsive weather app that provides current weather information for a specified location. The app uses the Weatherstack API to fetch real-time weather data and displays it with relevant icons and a background that matches the weather condition (e.g., sunny, cloudy, rainy, snowy).
 
 ## Features
 
@@ -19,7 +19,7 @@ A simple, mobile-responsive weather app that provides current weather informatio
 ### Prerequisites
 
 - An API key from [Weatherstack](https://weatherstack.com/) to access weather data.
-  
+
 ### Installation
 
 1. Clone the repository:
@@ -42,19 +42,20 @@ A simple, mobile-responsive weather app that provides current weather informatio
 3. View the current weather information for the entered location, including temperature, weather description, wind speed, humidity, and visibility.
 
 ### Folder Structure
+
+```
 .
 ├── index.html # Main HTML file 
 ├── style.css # CSS for styling and responsive design 
 ├── script.js # JavaScript for fetching and displaying weather data 
 └── README.md # Project documentation
-
+```
 
 ## API Reference
 
 The app uses the [Weatherstack API](https://weatherstack.com/documentation) for weather data. The base URL for the API request is:
 
 http://api.weatherstack.com/current?access_key=YOUR_API_KEY&query=LOCATION
-
 
 - Replace `YOUR_API_KEY` with your actual Weatherstack API key.
 - Replace `LOCATION` with the city name or coordinates for which you want to retrieve weather data.
@@ -84,3 +85,7 @@ This project is licensed under the MIT License. See `LICENSE` for more informati
 - Backgrounds generated using inline SVG.
 
 Replace YOUR_API_KEY with your actual Weatherstack API key and https://github.com/your-username/weather-app.git with the actual repository link if it’s hosted on GitHub. You can also add any additional customization instructions or links to assets you may use in the app.
+
+### Live Demo
+
+Check out the live app [here](https://weather-app-by-hussain.netlify.app/).
